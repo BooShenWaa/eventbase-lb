@@ -1,0 +1,81 @@
+{
+  "version": "0",
+  "id": "9a2f76b7-efc1-ec52-787f-a71f13fecc9d",
+  "detail-type": "AWS API Call via CloudTrail",
+  "source": "aws.ec2",
+  "account": "774752154143",
+  "time": "2021-04-20T16:12:56Z",
+  "region": "eu-west-2",
+  "resources": [],
+  "detail": {
+    "eventVersion": "1.08",
+    "userIdentity": {
+      "type": "AssumedRole",
+      "principalId": "AROA3IYWTWIPXNX26QVLW:ElasticLoadBalancing",
+      "arn": "arn:aws:sts::774752154143:assumed-role/AWSServiceRoleForElasticLoadBalancing/ElasticLoadBalancing",
+      "accountId": "774752154143",
+      "sessionContext": {
+        "sessionIssuer": {
+          "type": "Role",
+          "principalId": "AROA3IYWTWIPXNX26QVLW",
+          "arn": "arn:aws:iam::774752154143:role/aws-service-role/elasticloadbalancing.amazonaws.com/AWSServiceRoleForElasticLoadBalancing",
+          "accountId": "774752154143",
+          "userName": "AWSServiceRoleForElasticLoadBalancing"
+        },
+        "webIdFederationData": {},
+        "attributes": {
+          "mfaAuthenticated": "false",
+          "creationDate": "2021-04-20T16:12:56Z"
+        }
+      },
+      "invokedBy": "elasticloadbalancing.amazonaws.com"
+    },
+    "eventTime": "2021-04-20T16:12:56Z",
+    "eventSource": "ec2.amazonaws.com",
+    "eventName": "CreateNetworkInterface",
+    "awsRegion": "eu-west-2",
+    "sourceIPAddress": "elasticloadbalancing.amazonaws.com",
+    "userAgent": "elasticloadbalancing.amazonaws.com",
+    "requestParameters": {
+      "subnetId": "subnet-02d3eb5ed96d71ed2",
+      "description": "ELB app/ALB/13db82b0838b0fa4",
+      "groupSet": { "items": [{ "groupId": "sg-0b93cfd3617ca047b" }] },
+      "privateIpAddressesSet": {},
+      "ipv6AddressCount": 0
+    },
+    "responseElements": {
+      "requestId": "73964650-3b5a-4f5f-ade3-230f22dd6b06",
+      "networkInterface": {
+        "networkInterfaceId": "eni-05e9aff862a11fc5a",
+        "subnetId": "subnet-02d3eb5ed96d71ed2",
+        "vpcId": "vpc-04ee81dd08d0e2d41",
+        "availabilityZone": "eu-west-2b",
+        "description": "ELB app/ALB/13db82b0838b0fa4",
+        "ownerId": "774752154143",
+        "requesterId": "amazon-elb",
+        "requesterManaged": true,
+        "status": "pending",
+        "macAddress": "0a:6d:7a:52:92:3e",
+        "privateIpAddress": "10.0.11.68",
+        "sourceDestCheck": true,
+        "interfaceType": "interface",
+        "groupSet": {
+          "items": [
+            { "groupId": "sg-0b93cfd3617ca047b", "groupName": "ALB-SG" }
+          ]
+        },
+        "privateIpAddressesSet": {
+          "item": [{ "privateIpAddress": "10.0.1.248", "primary": true }]
+        },
+        "ipv6AddressesSet": {},
+        "tagSet": {}
+      }
+    },
+    "requestID": "73964650-3b5a-4f5f-ade3-230f22dd6b06",
+    "eventID": "b8fc6c57-e3b1-44f3-93f8-e8819d30d635",
+    "readOnly": false,
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "eventCategory": "Management"
+  }
+}
