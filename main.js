@@ -26,12 +26,6 @@ let NLB_TARGET_GROUP_ARN = process.env.NLB_TARGET_GROUP_ARN;
 let NLB_TARGET_PORT = process.env.NLB_TARGET_PORT;
 let ALB_ARN = process.env.ALB_ARN;
 
-// let NLB_TARGET_PORT = 80;
-// let NLB_TARGET_GROUP_ARN =
-//   "arn:aws:elasticloadbalancing:eu-west-2:774752154143:targetgroup/NLB-TG/fcc8ec10ca73a52d";
-// let ALB_ARN =
-//   "arn:aws:elasticloadbalancing:eu-west-2:774752154143:loadbalancer/app/ALB/13db82b0838b0fa4";
-
 // ARN Splitter
 const splitter = require("aws-arn-splitter");
 
@@ -132,6 +126,3 @@ exports.handler = async (event) => {
     return;
   }
 };
-
-// exports.handler(myEvent)
-// main(myEvent);
